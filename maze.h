@@ -1,5 +1,10 @@
+#ifndef MAZE_H
+#define MAZE_H
+#include <stdio.h>
+
 typedef struct _tree tree;
 typedef tree maze;
+
 
 
 
@@ -32,4 +37,6 @@ struct _tree
 
 maze *maze_random (int width, int height);
 void maze_svg (maze *maze, char *filename);
+void draw_tree(FILE *f, tree *node); 
 
+#endif

@@ -1,4 +1,3 @@
-
 .PHONY: all clean
 
 CC=gcc
@@ -8,7 +7,7 @@ LDFLAGS=
 
 all: maze
 
-maze: main.o maze.o svg.o
+maze: main.o maze.o svg.o path.o
 
 clean:
 	rm -f *.o maze
